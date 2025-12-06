@@ -2,7 +2,7 @@ const url = process.env.REACT_APP_API_URL;
 
 const refreshSheet = async (id, setSheet) => {
   if (id) {
-    fetch(url + "api/v1/sheet/" + id)
+    fetch(url + "/api/v1/sheet/" + id)
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -21,7 +21,7 @@ const refreshSheet = async (id, setSheet) => {
 
 const refreshHome = async (id, setUserSheetArray) => {
   if (id) {
-    fetch(url + "api/v1/userSheet/" + id)
+    fetch(url + "/api/v1/userSheet/" + id)
       .then((response) => {
         if (response.ok) {
           return response.json();

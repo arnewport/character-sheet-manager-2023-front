@@ -4,7 +4,7 @@ import AuthContext from "../contexts/AuthContext";
 const useUserSheets = () => {
   // variables
   const url = process.env.REACT_APP_API_URL;
-  const URL = url + "api/v1/userSheet/";
+  const URL = url + "/api/v1/userSheet/";
   const { user } = useContext(AuthContext);
   const userId = user.userId;
 

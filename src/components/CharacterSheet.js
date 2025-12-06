@@ -44,7 +44,7 @@ function CharacterSheet() {
 
   useEffect(() => {
     if (id) {
-      fetch(url + "api/v1/sheet/" + id)
+      fetch(url + "/api/v1/sheet/" + id)
         .then((response) => {
           if (response.ok) {
             return response.json();
@@ -84,7 +84,7 @@ function CharacterSheet() {
       },
       body: JSON.stringify(sheet),
     };
-    fetch(url + "api/v1/sheet/" + id, config)
+    fetch(url + "/api/v1/sheet/" + id, config)
       .then((response) => {
         if (response.ok) {
           // navigate("/agents");

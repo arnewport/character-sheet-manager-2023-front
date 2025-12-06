@@ -20,7 +20,7 @@ const createNewSheet = async (userId, navigate) => {
     body: JSON.stringify(INITIAL_SHEET),
   };
 
-  fetch(url + "api/v1/sheet", config)
+  fetch(url + "/api/v1/sheet", config)
     .then((response) => {
       if (response.ok) {
         return response
@@ -61,7 +61,7 @@ const createNewUserSheet = async (data, userId, navigate) => {
     }),
   };
 
-  fetch(url + "api/v1/userSheet", config)
+  fetch(url + "/api/v1/userSheet", config)
     .then((response) => {
       if (response.ok) {
         navigate(`/sheet/${data.id}`);

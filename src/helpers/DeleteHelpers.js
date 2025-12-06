@@ -7,7 +7,7 @@ const handleDelete = (id, navigate) => {
     };
 
     const deleteAllUserSheets = async () => {
-      fetch(url + "api/v1/userSheet/deleteAll/" + id, config)
+      fetch(url + "/api/v1/userSheet/deleteAll/" + id, config)
         .then((response) => {
           if (response.ok) {
             // success
@@ -25,7 +25,7 @@ const handleDelete = (id, navigate) => {
     };
 
     const deleteSheet = async () => {
-      fetch(url + "api/v1/sheet/" + id, config)
+      fetch(url + "/api/v1/sheet/" + id, config)
         .then((response) => {
           if (response.ok) {
             // success
